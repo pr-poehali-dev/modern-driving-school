@@ -24,11 +24,11 @@ export default {
 		},
 		extend: {
 			colors: {
-				'drive-orange': '#FF5C00',
-				'drive-yellow': '#FFB800',
-				'drive-dark': '#0D0D0D',
-				'drive-gray': '#1A1A1A',
-				'drive-card': '#141414',
+				'drive-orange': '#E8000E',
+				'drive-yellow': '#FF4D55',
+				'drive-dark': '#FFFFFF',
+				'drive-gray': '#F5F5F5',
+				'drive-card': '#FAFAFA',
 				border: 'hsl(var(--border))',
 				input: 'hsl(var(--input))',
 				ring: 'hsl(var(--ring))',

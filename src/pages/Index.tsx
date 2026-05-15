@@ -12,8 +12,8 @@ const categories = [
     duration: "3 месяца",
     lessons: "28 занятий",
     price: "от 18 000 ₽",
-    gradient: "from-orange-600 to-red-600",
-    accent: "#FF5C00",
+    gradient: "from-red-600 to-red-700",
+    accent: "#E8000E",
   },
   {
     letter: "В",
@@ -23,8 +23,8 @@ const categories = [
     duration: "3 месяца",
     lessons: "36 занятий",
     price: "от 25 000 ₽",
-    gradient: "from-yellow-500 to-orange-500",
-    accent: "#FFB800",
+    gradient: "from-red-500 to-red-600",
+    accent: "#E8000E",
   },
   {
     letter: "С",
@@ -34,8 +34,8 @@ const categories = [
     duration: "4 месяца",
     lessons: "44 занятия",
     price: "от 32 000 ₽",
-    gradient: "from-red-600 to-orange-700",
-    accent: "#FF3D00",
+    gradient: "from-red-700 to-red-800",
+    accent: "#E8000E",
   },
 ];
 
@@ -115,26 +115,26 @@ export default function Index() {
   };
 
   return (
-    <div className="min-h-screen bg-drive-dark font-golos text-white overflow-x-hidden">
+    <div className="min-h-screen bg-white font-golos text-gray-900 overflow-x-hidden">
 
       {/* NAV */}
-      <nav className="fixed top-0 left-0 right-0 z-50 bg-drive-dark/80 backdrop-blur-md border-b border-white/5">
+      <nav className="fixed top-0 left-0 right-0 z-50 bg-white/90 backdrop-blur-md border-b border-gray-100 shadow-sm">
         <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
           <div className="flex items-center gap-3">
             <div className="w-10 h-10 rounded-full bg-gradient-to-br from-drive-orange to-drive-yellow flex items-center justify-center">
               <Icon name="Car" size={20} className="text-white" />
             </div>
-            <span className="font-oswald text-xl font-bold tracking-wider text-white">DRIVE<span className="text-drive-orange">PRO</span></span>
+            <span className="font-oswald text-xl font-bold tracking-wider text-gray-900">DRIVE<span className="text-drive-orange">PRO</span></span>
           </div>
-          <div className="hidden md:flex items-center gap-8 text-sm font-medium text-white/70">
+          <div className="hidden md:flex items-center gap-8 text-sm font-medium text-gray-500">
             <a href="#programs" className="hover:text-drive-orange transition-colors">Программы</a>
             <a href="#instructors" className="hover:text-drive-orange transition-colors">Инструкторы</a>
             <a href="#faq" className="hover:text-drive-orange transition-colors">FAQ</a>
-            <a href="#contact" className="bg-drive-orange hover:bg-orange-600 text-white px-5 py-2 rounded-full transition-colors font-semibold">
+            <a href="#contact" className="bg-drive-orange hover:bg-red-700 text-white px-5 py-2 rounded-full transition-colors font-semibold">
               Записаться
             </a>
           </div>
-          <a href="#contact" className="md:hidden bg-drive-orange hover:bg-orange-600 text-white px-4 py-2 rounded-full text-sm font-semibold transition-colors">
+          <a href="#contact" className="md:hidden bg-drive-orange hover:bg-red-700 text-white px-4 py-2 rounded-full text-sm font-semibold transition-colors">
             Записаться
           </a>
         </div>
@@ -146,15 +146,15 @@ export default function Index() {
           className="absolute inset-0 bg-cover bg-center"
           style={{ backgroundImage: `url(${heroImage})` }}
         />
-        <div className="absolute inset-0 bg-gradient-to-r from-drive-dark via-drive-dark/80 to-transparent" />
-        <div className="absolute inset-0 bg-gradient-to-t from-drive-dark via-transparent to-drive-dark/60" />
+        <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/60 to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-black/40" />
 
         <div className="absolute top-1/3 right-10 w-px h-64 bg-gradient-to-b from-transparent via-drive-orange/40 to-transparent" />
-        <div className="absolute bottom-1/3 right-20 w-px h-40 bg-gradient-to-b from-transparent via-drive-yellow/30 to-transparent" />
+        <div className="absolute bottom-1/3 right-20 w-px h-40 bg-gradient-to-b from-transparent via-red-300/30 to-transparent" />
 
         <div className="relative z-10 max-w-7xl mx-auto px-6 pt-24">
           <div className="max-w-3xl">
-            <div className="inline-flex items-center gap-2 bg-drive-orange/20 border border-drive-orange/40 rounded-full px-4 py-2 mb-6">
+            <div className="inline-flex items-center gap-2 bg-drive-orange/10 border border-drive-orange/30 rounded-full px-4 py-2 mb-6">
               <div className="w-2 h-2 rounded-full bg-drive-orange animate-pulse" />
               <span className="text-drive-orange text-sm font-semibold">Запись открыта</span>
             </div>
@@ -167,27 +167,27 @@ export default function Index() {
               ДОРОГИ
             </h1>
 
-            <p className="text-white/70 text-lg md:text-xl leading-relaxed mb-10 max-w-xl">
+            <p className="text-white/80 text-lg md:text-xl leading-relaxed mb-10 max-w-xl">
               Профессиональная автошкола с опытными инструкторами. Категории А, В и С — выбирай свой путь к свободе на дороге.
             </p>
 
             <div className="flex flex-wrap gap-4">
-              <a href="#contact" className="bg-gradient-to-r from-drive-orange to-orange-600 hover:from-orange-600 hover:to-drive-orange text-white px-8 py-4 rounded-full font-bold text-lg transition-all duration-300 hover:scale-105 shadow-lg shadow-orange-500/30">
+              <a href="#contact" className="bg-drive-orange hover:bg-red-700 text-white px-8 py-4 rounded-full font-bold text-lg transition-all duration-300 hover:scale-105 shadow-lg shadow-red-500/30">
                 Записаться сейчас
               </a>
-              <a href="#programs" className="border border-white/30 hover:border-drive-orange text-white hover:text-drive-orange px-8 py-4 rounded-full font-semibold text-lg transition-all duration-300">
+              <a href="#programs" className="border border-white/40 hover:border-white text-white hover:bg-white/10 px-8 py-4 rounded-full font-semibold text-lg transition-all duration-300">
                 Узнать подробнее
               </a>
             </div>
           </div>
         </div>
 
-        <div className="absolute bottom-0 left-0 right-0 bg-drive-gray/90 backdrop-blur-sm border-t border-white/5">
+        <div className="absolute bottom-0 left-0 right-0 bg-white border-t border-gray-100 shadow-md">
           <div className="max-w-7xl mx-auto px-6 py-5 grid grid-cols-2 md:grid-cols-4 gap-6">
             {stats.map((s, i) => (
               <div key={i} className="text-center">
                 <div className="font-oswald text-2xl md:text-3xl font-bold text-drive-orange">{s.value}</div>
-                <div className="text-white/50 text-sm mt-1">{s.label}</div>
+                <div className="text-gray-500 text-sm mt-1">{s.label}</div>
               </div>
             ))}
           </div>
@@ -195,11 +195,11 @@ export default function Index() {
       </section>
 
       {/* PROGRAMS */}
-      <section id="programs" className="py-24 bg-drive-dark">
+      <section id="programs" className="py-24 bg-white">
         <div className="max-w-7xl mx-auto px-6">
           <div className="mb-16">
             <div className="text-drive-orange font-semibold text-sm tracking-widest uppercase mb-3">Наши программы</div>
-            <h2 className="font-oswald text-5xl md:text-6xl font-bold text-white">
+            <h2 className="font-oswald text-5xl md:text-6xl font-bold text-gray-900">
               КАТЕГОРИИ<br /><span className="text-drive-orange">ОБУЧЕНИЯ</span>
             </h2>
           </div>
@@ -208,40 +208,40 @@ export default function Index() {
             {categories.map((cat, i) => (
               <div
                 key={i}
-                className="group relative bg-drive-card rounded-2xl overflow-hidden border border-white/5 hover:border-white/20 transition-all duration-500 hover:-translate-y-2"
+                className="group relative bg-white rounded-2xl overflow-hidden border border-gray-100 hover:border-red-200 shadow-sm hover:shadow-lg transition-all duration-500 hover:-translate-y-2"
               >
-                <div className={`absolute inset-0 bg-gradient-to-br ${cat.gradient} opacity-0 group-hover:opacity-10 transition-opacity duration-500`} />
+                <div className={`absolute inset-0 bg-gradient-to-br ${cat.gradient} opacity-0 group-hover:opacity-5 transition-opacity duration-500`} />
 
                 <div className="p-8">
                   <div className="flex items-start justify-between mb-6">
                     <div
                       className="font-oswald text-8xl font-black leading-none"
-                      style={{ color: cat.accent, opacity: 0.15 }}
+                      style={{ color: cat.accent, opacity: 0.12 }}
                     >
                       {cat.letter}
                     </div>
                     <div
                       className="w-14 h-14 rounded-xl flex items-center justify-center"
-                      style={{ background: `${cat.accent}20`, border: `1px solid ${cat.accent}40` }}
+                      style={{ background: `${cat.accent}15`, border: `1px solid ${cat.accent}30` }}
                     >
                       <Icon name={cat.icon} size={26} style={{ color: cat.accent }} />
                     </div>
                   </div>
 
                   <div className="mb-2">
-                    <span className="font-oswald text-4xl font-bold text-white">Кат. {cat.letter}</span>
+                    <span className="font-oswald text-4xl font-bold text-gray-900">Кат. {cat.letter}</span>
                   </div>
                   <div className="text-drive-orange font-semibold text-lg mb-4">{cat.title}</div>
-                  <p className="text-white/60 text-sm leading-relaxed mb-8">{cat.desc}</p>
+                  <p className="text-gray-500 text-sm leading-relaxed mb-8">{cat.desc}</p>
 
                   <div className="grid grid-cols-2 gap-3 mb-8">
                     {[
                       { icon: "Clock", val: cat.duration },
                       { icon: "BookOpen", val: cat.lessons },
                     ].map((item, j) => (
-                      <div key={j} className="bg-white/5 rounded-xl p-3 flex items-center gap-2">
-                        <Icon name={item.icon} size={16} className="text-white/40" />
-                        <span className="text-white/70 text-sm">{item.val}</span>
+                      <div key={j} className="bg-gray-50 rounded-xl p-3 flex items-center gap-2">
+                        <Icon name={item.icon} size={16} className="text-gray-400" />
+                        <span className="text-gray-600 text-sm">{item.val}</span>
                       </div>
                     ))}
                   </div>
@@ -250,8 +250,8 @@ export default function Index() {
                     <span className="font-oswald text-2xl font-bold" style={{ color: cat.accent }}>{cat.price}</span>
                     <a
                       href="#contact"
-                      className="text-sm font-semibold px-5 py-2.5 rounded-full transition-all duration-300 hover:scale-105"
-                      style={{ background: `${cat.accent}20`, color: cat.accent, border: `1px solid ${cat.accent}40` }}
+                      className="text-sm font-semibold px-5 py-2.5 rounded-full transition-all duration-300 hover:scale-105 text-white"
+                      style={{ background: cat.accent }}
                     >
                       Записаться →
                     </a>
@@ -264,12 +264,12 @@ export default function Index() {
       </section>
 
       {/* WHY US */}
-      <section className="py-20 bg-drive-gray">
+      <section className="py-20 bg-gray-50">
         <div className="max-w-7xl mx-auto px-6">
           <div className="grid md:grid-cols-2 gap-16 items-center">
             <div>
               <div className="text-drive-orange font-semibold text-sm tracking-widest uppercase mb-3">Почему мы</div>
-              <h2 className="font-oswald text-5xl font-bold text-white mb-8">
+              <h2 className="font-oswald text-5xl font-bold text-gray-900 mb-8">
                 ВАША БЕЗОПАСНОСТЬ —<br /><span className="text-drive-orange">НАШ ПРИОРИТЕТ</span>
               </h2>
               <div className="space-y-5">
@@ -284,8 +284,8 @@ export default function Index() {
                       <Icon name={item.icon} size={20} className="text-drive-orange" />
                     </div>
                     <div>
-                      <div className="font-semibold text-white mb-1">{item.title}</div>
-                      <div className="text-white/50 text-sm">{item.desc}</div>
+                      <div className="font-semibold text-gray-900 mb-1">{item.title}</div>
+                      <div className="text-gray-500 text-sm">{item.desc}</div>
                     </div>
                   </div>
                 ))}
@@ -293,20 +293,20 @@ export default function Index() {
             </div>
 
             <div className="relative">
-              <div className="absolute -inset-4 bg-gradient-to-br from-drive-orange/20 to-drive-yellow/10 rounded-3xl blur-2xl" />
-              <div className="relative bg-drive-card rounded-2xl p-8 border border-white/10">
-                <div className="font-oswald text-4xl font-black text-white mb-2">Как проходит обучение?</div>
-                <div className="text-white/50 mb-8">Простой путь к правам за 3 шага</div>
+              <div className="absolute -inset-4 bg-gradient-to-br from-drive-orange/10 to-red-100/50 rounded-3xl blur-2xl" />
+              <div className="relative bg-white rounded-2xl p-8 border border-gray-100 shadow-sm">
+                <div className="font-oswald text-4xl font-black text-gray-900 mb-2">Как проходит обучение?</div>
+                <div className="text-gray-400 mb-8">Простой путь к правам за 3 шага</div>
                 {[
                   { num: "01", title: "Теория", desc: "Онлайн и офлайн занятия по ПДД. Тесты и разбор сложных ситуаций." },
                   { num: "02", title: "Практика", desc: "Занятия на автодроме, затем выезды в город с инструктором." },
                   { num: "03", title: "Экзамен", desc: "Подготовка и сдача экзамена в ГИБДД. Мы сопровождаем вас." },
                 ].map((step, i) => (
                   <div key={i} className="flex gap-5 mb-6 last:mb-0">
-                    <div className="font-oswald text-4xl font-black text-drive-orange/30 leading-none w-12 flex-shrink-0">{step.num}</div>
-                    <div className="border-l border-white/10 pl-5">
-                      <div className="font-semibold text-white mb-1">{step.title}</div>
-                      <div className="text-white/50 text-sm">{step.desc}</div>
+                    <div className="font-oswald text-4xl font-black text-drive-orange/25 leading-none w-12 flex-shrink-0">{step.num}</div>
+                    <div className="border-l border-gray-100 pl-5">
+                      <div className="font-semibold text-gray-900 mb-1">{step.title}</div>
+                      <div className="text-gray-500 text-sm">{step.desc}</div>
                     </div>
                   </div>
                 ))}
@@ -317,11 +317,11 @@ export default function Index() {
       </section>
 
       {/* INSTRUCTORS */}
-      <section id="instructors" className="py-24 bg-drive-dark">
+      <section id="instructors" className="py-24 bg-white">
         <div className="max-w-7xl mx-auto px-6">
           <div className="mb-16">
             <div className="text-drive-orange font-semibold text-sm tracking-widest uppercase mb-3">Команда</div>
-            <h2 className="font-oswald text-5xl md:text-6xl font-bold text-white">
+            <h2 className="font-oswald text-5xl md:text-6xl font-bold text-gray-900">
               ВАШИ<br /><span className="text-drive-orange">ИНСТРУКТОРЫ</span>
             </h2>
           </div>
@@ -330,19 +330,19 @@ export default function Index() {
             {instructors.map((inst, i) => (
               <div
                 key={i}
-                className="group bg-drive-card rounded-2xl p-6 border border-white/5 hover:border-drive-orange/30 transition-all duration-300 hover:-translate-y-1"
+                className="group bg-white rounded-2xl p-6 border border-gray-100 hover:border-red-200 shadow-sm hover:shadow-md transition-all duration-300 hover:-translate-y-1"
               >
                 <div className="text-5xl mb-4">{inst.avatar}</div>
-                <div className="font-oswald text-xl font-bold text-white mb-1">{inst.name}</div>
+                <div className="font-oswald text-xl font-bold text-gray-900 mb-1">{inst.name}</div>
                 <div className="text-drive-orange text-sm font-semibold mb-3">{inst.exp}</div>
                 <div className="flex gap-2 mb-4">
                   {inst.cats.map((c) => (
-                    <span key={c} className="text-xs font-bold px-2.5 py-1 rounded-full bg-drive-orange/10 text-drive-orange border border-drive-orange/20">
+                    <span key={c} className="text-xs font-bold px-2.5 py-1 rounded-full bg-red-50 text-drive-orange border border-red-100">
                       Кат. {c}
                     </span>
                   ))}
                 </div>
-                <p className="text-white/50 text-sm leading-relaxed">{inst.desc}</p>
+                <p className="text-gray-500 text-sm leading-relaxed">{inst.desc}</p>
               </div>
             ))}
           </div>
@@ -350,11 +350,11 @@ export default function Index() {
       </section>
 
       {/* FAQ */}
-      <section id="faq" className="py-24 bg-drive-gray">
+      <section id="faq" className="py-24 bg-gray-50">
         <div className="max-w-4xl mx-auto px-6">
           <div className="mb-16 text-center">
             <div className="text-drive-orange font-semibold text-sm tracking-widest uppercase mb-3">FAQ</div>
-            <h2 className="font-oswald text-5xl md:text-6xl font-bold text-white">
+            <h2 className="font-oswald text-5xl md:text-6xl font-bold text-gray-900">
               ЧАСТЫЕ <span className="text-drive-orange">ВОПРОСЫ</span>
             </h2>
           </div>
@@ -363,20 +363,20 @@ export default function Index() {
             {faqs.map((faq, i) => (
               <div
                 key={i}
-                className="bg-drive-card rounded-xl border border-white/5 overflow-hidden"
+                className="bg-white rounded-xl border border-gray-100 overflow-hidden shadow-sm"
               >
                 <button
                   onClick={() => setOpenFaq(openFaq === i ? null : i)}
-                  className="w-full flex items-center justify-between px-7 py-5 text-left hover:bg-white/3 transition-colors"
+                  className="w-full flex items-center justify-between px-7 py-5 text-left hover:bg-gray-50 transition-colors"
                 >
-                  <span className="font-semibold text-white pr-4">{faq.q}</span>
-                  <div className={`flex-shrink-0 w-8 h-8 rounded-full border border-white/10 flex items-center justify-center transition-all duration-300 ${openFaq === i ? 'bg-drive-orange border-drive-orange rotate-45' : ''}`}>
-                    <Icon name="Plus" size={16} className={openFaq === i ? 'text-white' : 'text-white/40'} />
+                  <span className="font-semibold text-gray-900 pr-4">{faq.q}</span>
+                  <div className={`flex-shrink-0 w-8 h-8 rounded-full border flex items-center justify-center transition-all duration-300 ${openFaq === i ? 'bg-drive-orange border-drive-orange rotate-45' : 'border-gray-200'}`}>
+                    <Icon name="Plus" size={16} className={openFaq === i ? 'text-white' : 'text-gray-400'} />
                   </div>
                 </button>
                 {openFaq === i && (
                   <div className="px-7 pb-5">
-                    <div className="border-t border-white/5 pt-4 text-white/60 leading-relaxed">{faq.a}</div>
+                    <div className="border-t border-gray-100 pt-4 text-gray-500 leading-relaxed">{faq.a}</div>
                   </div>
                 )}
               </div>
@@ -386,15 +386,15 @@ export default function Index() {
       </section>
 
       {/* CONTACT */}
-      <section id="contact" className="py-24 bg-drive-dark">
+      <section id="contact" className="py-24 bg-white">
         <div className="max-w-7xl mx-auto px-6">
           <div className="grid lg:grid-cols-2 gap-16 items-start">
             <div>
               <div className="text-drive-orange font-semibold text-sm tracking-widest uppercase mb-3">Контакты</div>
-              <h2 className="font-oswald text-5xl md:text-6xl font-bold text-white mb-6">
+              <h2 className="font-oswald text-5xl md:text-6xl font-bold text-gray-900 mb-6">
                 НАЧНИ<br /><span className="text-drive-orange">СЕГОДНЯ</span>
               </h2>
-              <p className="text-white/60 text-lg leading-relaxed mb-10">
+              <p className="text-gray-500 text-lg leading-relaxed mb-10">
                 Оставь заявку — мы перезвоним в течение часа и ответим на все вопросы
               </p>
 
@@ -410,80 +410,80 @@ export default function Index() {
                       <Icon name={item.icon} size={18} className="text-drive-orange" />
                     </div>
                     <div>
-                      <div className="text-white/40 text-xs uppercase tracking-wider">{item.label}</div>
-                      <div className="text-white font-semibold">{item.val}</div>
+                      <div className="text-gray-400 text-xs uppercase tracking-wider">{item.label}</div>
+                      <div className="text-gray-900 font-semibold">{item.val}</div>
                     </div>
                   </div>
                 ))}
               </div>
             </div>
 
-            <div className="bg-drive-card rounded-2xl p-8 border border-white/10">
+            <div className="bg-gray-50 rounded-2xl p-8 border border-gray-100 shadow-sm">
               {sent ? (
                 <div className="text-center py-10">
-                  <div className="w-20 h-20 rounded-full bg-green-500/20 border border-green-500/40 flex items-center justify-center mx-auto mb-5">
-                    <Icon name="Check" size={36} className="text-green-400" />
+                  <div className="w-20 h-20 rounded-full bg-green-100 border border-green-200 flex items-center justify-center mx-auto mb-5">
+                    <Icon name="Check" size={36} className="text-green-500" />
                   </div>
-                  <div className="font-oswald text-3xl font-bold text-white mb-3">Отлично!</div>
-                  <p className="text-white/60">Ваша заявка принята. Мы свяжемся с вами в течение часа.</p>
+                  <div className="font-oswald text-3xl font-bold text-gray-900 mb-3">Отлично!</div>
+                  <p className="text-gray-500">Ваша заявка принята. Мы свяжемся с вами в течение часа.</p>
                 </div>
               ) : (
                 <>
-                  <div className="font-oswald text-3xl font-bold text-white mb-2">Оставить заявку</div>
-                  <p className="text-white/40 text-sm mb-8">Заполните форму — мы перезвоним</p>
+                  <div className="font-oswald text-3xl font-bold text-gray-900 mb-2">Оставить заявку</div>
+                  <p className="text-gray-400 text-sm mb-8">Заполните форму — мы перезвоним</p>
                   <form onSubmit={handleSubmit} className="space-y-4">
                     <div>
-                      <label className="block text-white/60 text-sm mb-2">Ваше имя *</label>
+                      <label className="block text-gray-600 text-sm mb-2">Ваше имя *</label>
                       <input
                         required
                         type="text"
                         value={form.name}
                         onChange={e => setForm({ ...form, name: e.target.value })}
                         placeholder="Иван Иванов"
-                        className="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-white placeholder-white/20 focus:outline-none focus:border-drive-orange transition-colors"
+                        className="w-full bg-white border border-gray-200 rounded-xl px-4 py-3 text-gray-900 placeholder-gray-300 focus:outline-none focus:border-drive-orange transition-colors"
                       />
                     </div>
                     <div>
-                      <label className="block text-white/60 text-sm mb-2">Телефон *</label>
+                      <label className="block text-gray-600 text-sm mb-2">Телефон *</label>
                       <input
                         required
                         type="tel"
                         value={form.phone}
                         onChange={e => setForm({ ...form, phone: e.target.value })}
                         placeholder="+7 (999) 000-00-00"
-                        className="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-white placeholder-white/20 focus:outline-none focus:border-drive-orange transition-colors"
+                        className="w-full bg-white border border-gray-200 rounded-xl px-4 py-3 text-gray-900 placeholder-gray-300 focus:outline-none focus:border-drive-orange transition-colors"
                       />
                     </div>
                     <div>
-                      <label className="block text-white/60 text-sm mb-2">Категория</label>
+                      <label className="block text-gray-600 text-sm mb-2">Категория</label>
                       <select
                         value={form.category}
                         onChange={e => setForm({ ...form, category: e.target.value })}
-                        className="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-drive-orange transition-colors"
+                        className="w-full bg-white border border-gray-200 rounded-xl px-4 py-3 text-gray-900 focus:outline-none focus:border-drive-orange transition-colors"
                       >
-                        <option value="" className="bg-drive-dark">Выберите категорию</option>
-                        <option value="A" className="bg-drive-dark">Категория А — Мотоциклы</option>
-                        <option value="B" className="bg-drive-dark">Категория В — Легковые авто</option>
-                        <option value="C" className="bg-drive-dark">Категория С — Грузовые авто</option>
+                        <option value="">Выберите категорию</option>
+                        <option value="A">Категория А — Мотоциклы</option>
+                        <option value="B">Категория В — Легковые авто</option>
+                        <option value="C">Категория С — Грузовые авто</option>
                       </select>
                     </div>
                     <div>
-                      <label className="block text-white/60 text-sm mb-2">Сообщение</label>
+                      <label className="block text-gray-600 text-sm mb-2">Сообщение</label>
                       <textarea
                         value={form.message}
                         onChange={e => setForm({ ...form, message: e.target.value })}
                         placeholder="Ваш вопрос или пожелание..."
                         rows={3}
-                        className="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-white placeholder-white/20 focus:outline-none focus:border-drive-orange transition-colors resize-none"
+                        className="w-full bg-white border border-gray-200 rounded-xl px-4 py-3 text-gray-900 placeholder-gray-300 focus:outline-none focus:border-drive-orange transition-colors resize-none"
                       />
                     </div>
                     <button
                       type="submit"
-                      className="w-full bg-gradient-to-r from-drive-orange to-orange-600 hover:from-orange-600 hover:to-drive-orange text-white py-4 rounded-xl font-bold text-lg transition-all duration-300 hover:scale-[1.02] shadow-lg shadow-orange-500/20"
+                      className="w-full bg-drive-orange hover:bg-red-700 text-white py-4 rounded-xl font-bold text-lg transition-all duration-300 hover:scale-[1.02] shadow-lg shadow-red-200"
                     >
                       Отправить заявку
                     </button>
-                    <p className="text-white/20 text-xs text-center">Нажимая кнопку, вы соглашаетесь с политикой конфиденциальности</p>
+                    <p className="text-gray-300 text-xs text-center">Нажимая кнопку, вы соглашаетесь с политикой конфиденциальности</p>
                   </form>
                 </>
               )}
@@ -493,17 +493,17 @@ export default function Index() {
       </section>
 
       {/* FOOTER */}
-      <footer className="py-8 bg-black border-t border-white/5">
+      <footer className="py-8 bg-gray-50 border-t border-gray-100">
         <div className="max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-4">
           <div className="flex items-center gap-3">
-            <div className="w-8 h-8 rounded-full bg-gradient-to-br from-drive-orange to-drive-yellow flex items-center justify-center">
+            <div className="w-8 h-8 rounded-full bg-drive-orange flex items-center justify-center">
               <Icon name="Car" size={14} className="text-white" />
             </div>
-            <span className="font-oswald font-bold tracking-wider text-white">DRIVE<span className="text-drive-orange">PRO</span></span>
+            <span className="font-oswald font-bold tracking-wider text-gray-900">DRIVE<span className="text-drive-orange">PRO</span></span>
           </div>
-          <div className="text-white/30 text-sm">© 2024 DrivePro. Все права защищены.</div>
-          <div className="flex gap-4 text-white/40 text-sm">
-            <a href="#" className="hover:text-white transition-colors">Политика конфиденциальности</a>
+          <div className="text-gray-400 text-sm">© 2024 DrivePro. Все права защищены.</div>
+          <div className="flex gap-4 text-gray-400 text-sm">
+            <a href="#" className="hover:text-gray-700 transition-colors">Политика конфиденциальности</a>
           </div>
         </div>
       </footer>
